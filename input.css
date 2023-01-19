@@ -1,10 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  background: url("../images/bg-pattern-top.svg") -15rem -30rem / contain
+      no-repeat,
+    url("../images/bg-pattern-bottom.svg") right -10rem bottom -25rem / contain
+      no-repeat;
+  background-color: hsl(185, 75%, 39%);
+}
+h1,
+h2,
+p,
+a {
+  font-family: "Kumbh Sans", sans-serif;
+}
+.avatar {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 .attribution {
+  background-color: white;
+  padding: 0 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
+  font-weight: 700;
   color: hsl(228, 45%, 44%);
 }
